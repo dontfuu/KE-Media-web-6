@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useLanguage } from '~/lib/language'
+import { useLanguage } from '../lib/language'
 import Link from 'next/link'
 
 const featured = [
@@ -94,3 +94,4 @@ export default function Portfolio() {
     </section>
   )
 }
+
