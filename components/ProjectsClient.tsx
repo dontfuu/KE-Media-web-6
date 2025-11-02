@@ -36,7 +36,7 @@ export default function ProjectsClient({ projects }: { projects: any[] }) {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <Link href={`/projects/${project.id}`}>
+              <Link href={`/projects/${project.id}`}> 
                 <div className="relative aspect-[4/3] bg-gray-900 rounded-lg overflow-hidden mb-4">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#A3FF47]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute inset-0 flex items-center justify-center text-gray-600">
