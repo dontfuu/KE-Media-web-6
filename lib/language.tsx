@@ -1,4 +1,5 @@
 'use client'
+
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 
 type LanguageType = 'en' | 'vn'
@@ -12,18 +13,22 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<LanguageType>('vn') // default VN
-  const [mounted, setMounted] = useState(false)
+  const [language, setLanguageState] = useState<LanguageType>('en')
 
   useEffect(() => {
-    setMounted(true)
-    const saved = localStorage.getItem('ke-media-language') as LanguageType
-    if (saved) setLanguageState(saved)
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('ke-media-language') as LanguageType
+      if (saved === 'en' || saved === 'vn') {
+        setLanguageState(saved)
+      }
+    }
   }, [])
 
   const setLanguage = (lang: LanguageType) => {
     setLanguageState(lang)
-    if (mounted) localStorage.setItem('ke-media-language', lang)
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('ke-media-language', lang)
+    }
   }
 
   const t = (text: { en: string; vn: string }) => text[language]
