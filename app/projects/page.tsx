@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useLanguage } from '../lib/language'
+import { useLanguage } from '../../lib/language'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -129,4 +129,5 @@ export default function ProjectsPage() {
     </div>
   )
 }
+
 
