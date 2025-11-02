@@ -1,13 +1,14 @@
 'use client'
-import { useLanguage } from '@/lib/language'
+
+import { useLanguage } from '~/lib/language'
 
 export default function LanguageToggle() {
   const { language, setLanguage } = useLanguage()
-  
+
   return (
     <button
       onClick={() => setLanguage(language === 'en' ? 'vn' : 'en')}
-      className="px-4 py-2 bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors font-medium"
+      className="px-3 py-1.5 text-xs border border-white/20 rounded-md hover:border-[#A3FF47] hover:text-[#A3FF47] transition-all"
     >
       {language === 'en' ? 'VN' : 'EN'}
     </button>
