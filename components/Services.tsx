@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useLanguage } from '~/lib/language'
+import { useLanguage } from '../lib/language'
 import { Lightbulb, Clapperboard, Rocket } from 'lucide-react'
 
 const services = [
@@ -66,3 +66,4 @@ export default function Services() {
     </section>
   )
 }
+
