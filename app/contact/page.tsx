@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { useLanguage } from '../lib/language'
+import { useLanguage } from '../../lib/language'
 
 export default function ContactPage() {
   const { t } = useLanguage()
@@ -143,4 +143,5 @@ export default function ContactPage() {
     </div>
   )
 }
+
 
