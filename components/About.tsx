@@ -1,4 +1,3 @@
-'use client'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/lib/language'
 
@@ -36,3 +35,4 @@ export default function About() {
     </section>
   )
 }
+
