@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import { useLanguage } from '~/lib/language'
+import { useLanguage } from '../lib/language'
 import { useEffect, useState } from 'react'
 
 const stats = [
@@ -54,4 +54,5 @@ export default function Stats() {
     </section>
   )
 }
+
 
