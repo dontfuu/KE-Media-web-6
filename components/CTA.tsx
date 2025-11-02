@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useLanguage } from '~/lib/language'
+import { useLanguage } from '../lib/language'
 import Link from 'next/link'
 
 export default function CTA() {
@@ -42,3 +42,4 @@ export default function CTA() {
     </section>
   )
 }
+
