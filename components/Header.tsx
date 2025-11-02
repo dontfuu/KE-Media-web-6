@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import LanguageToggle from './components/LanguageToggle'
+import LanguageToggle from './LanguageToggle'
 import { useLanguage } from '../lib/language'
 
 export default function Header() {
@@ -85,4 +85,5 @@ export default function Header() {
     </motion.header>
   )
 }
+
 
