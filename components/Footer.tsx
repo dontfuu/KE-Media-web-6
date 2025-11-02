@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useLanguage } from '~/lib/language'
+import { useLanguage } from '../lib/language'
 
 export default function Footer() {
   const { t } = useLanguage()
@@ -49,3 +49,4 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/" className="hover:text-[#A3FF47]">{t({ en: 'Home', vn: 'Trang Chủ' })}</Link></li>
               <li><Link href="/projects" className="hover:text-[#A3FF47]">{t({ en: 'Projects', vn: 'Dự Án' })}</Link></li>
+
