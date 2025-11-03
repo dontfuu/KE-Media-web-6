@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useLanguage } from '../../lib/language'
 import Image from 'next/image'
 import Link from 'next/link'
+import ProjectsClient from '../../components/ProjectsClient'
 
 const projects = [
   {
@@ -129,6 +130,7 @@ export default function ProjectsPage() {
     </div>
   )
 }
+
 
 
 
